@@ -44,6 +44,8 @@ order by ja.start_execution_date
 declare @tabla table (job_id nvarchar(max), job_name nvarchar(max), accion nvarchar(max))
 insert into @tabla (job_id,job_name,Accion) select m.job_id,m.job_name,m.accion from #tmpjobs m where accion ='Matar'
 
+--select * from @tabla
+
 declare @cont int
 set @cont = 1
 declare @cant int = (select count(*) from @tabla)
