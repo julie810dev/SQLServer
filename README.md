@@ -1,2 +1,2 @@
 # SQLServer
-SQL Scripts
+TSQL Scripts
